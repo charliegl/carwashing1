@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./car.css">
+    
+</head>
+    <title>Car-Washing</title>
+</head>
+<body>
+
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary">linea fija nacional |60(7)6858585</a></li>
+          <!-- <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About</a></li> -->
+        </ul>
+
+        
+
+        <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+        </form> -->
+
+        <div class="text-end">
+          <div id="buttonconten" class="d-flex justify-content-center">
+
+            <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal">
+              <a href="./gestioncliente.html" target="_blank"  style="color: white; text-decoration: none;">Gestion de clientes</a>
+        </button>
+        <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal">
+          <a href="./gestionservicio.html" target="_blank"  style="color: white; text-decoration: none;">Gestion de servicio</a>
+    </button>
+        
+    
+     
+   
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+<div class="divformulariofoto">
+  <!-- <img src="./formulario_fondo2.avif" class="formulariofoto w-100" id="foto"> -->
+  <div ">
+    <h1>Campus Car Washing Center</h1>
+  </div>
+
+ 
+
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="origen">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="ingresa el nombre">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="destino">Servicio:</label>
+            <input type="text" class="form-control" id="servicio" placeholder="ingrese el servicio:lavado,polichada,mantenimineto">
+          </div>
+        </div>
+        <!-- <div class="col-md-6">
+          <div class="form-group">
+            <label for="fechaSalida">Departure Date:</label>
+            <input type="dext" placeholder="" class="form-control" id="total">
+          </div>
+        </div> -->
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button type="button" class="btn btn-primary mx-2" onclick="searchserv() ">Search</button>
+        </div>
+      </div>
+      <div id="serviciooResults"></div>
+    </div>
+      
+        
+
+
+ 
+
+<!--carousel-->
+
+<div class="contenedorcarr p-3 mb-2 bg-primary-subtle text-emphasis-primary" data-bs-ride="carousel">
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/mecanico-motor-auto.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/lee-attwood-1eQBP3Iit48-unsplash.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/shutterstock-carcar.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/popescu-andrei-alexandru-KQjBXXPRsYM-unsplash.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/zq5-P9w-cccc_m.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+  
+      
+      <!-- Add Data Modal -->
+      <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+        <!-- Modal content for adding data -->
+      </div>
+      
+      <!-- Modify Data Modal -->
+      <div class="modal fade" id="modifyModal" tabindex="-1" role="dialog" aria-labelledby="modifyModalLabel" aria-hidden="true">
+        <!-- Modal content for modifying data -->
+      </div>
+      
+      <!-- Search Data Modal -->
+      <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <!-- Modal content for searching data -->
+      </div>
+      
+      <!-- Delete Data Modal -->
+      <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <!-- Modal content for deleting data -->
+      </div>
+    
+    <div class="container ">
+        <div class="row ">
+          <div class="col-sm-4 d-flex align-items-stretch">
+            <div class="card bg-black">
+              <img src="./img/20200421-PRECIOS-DE-CARROS-NUEVOS-ABRIL-2020-MAZDA-01AA.jpg" class="card-img-top img-fluid h-100" alt="Image 1">
+              <div class="card-body">
+                <!-- Card content for Image 1 -->
+                <h2 class="text-light bg-dark">Mazda 2
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 d-flex align-items-stretch">
+            <div class="card bg-black">
+              <img src="./img/20201104-RENAULT-KWID-ICONIC-COLOMBIA-PRECIO-CARACTERISTICAS-02.jpg" class="card-img-top img-fluid h-100" alt="Image 2">
+              <div class="card-body">
+                <!-- Card content for Image 2 -->
+                <h2 class="text-light bg-dark"> Renault Kwid</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 d-flex align-items-stretch">
+            <div class="card bg-black">
+              <img src="./img/20210128-NISSAN-FRONTIER-2021-COLOMBIA-PRECIOS-VERSIONES-CARACTERISTICAS-09.jpg" class="card-img-top img-fluid h-100" alt="Image 3">
+              <div class="card-body">
+                <!-- Card content for Image 3 -->
+                <h2 class="text-light bg-dark">Nissan Frontier</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+      <script src="./index.js"></script> 
+    
+   
+</body>
+</html>

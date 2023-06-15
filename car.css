@@ -1,0 +1,43 @@
+/* Cambiar el tamaño del carrusel */
+  /* Estilos personalizados */
+  .carousel-item img {
+    /* width: 60%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    height: 400px; /* Ajusta la altura de las imágenes según tus necesidades */
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área */
+  }
+  .contenedorcarr{
+    width: 100%;
+    align-content: center;
+  } */
+  /* Estilos personalizados */
+.carousel {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el carrusel */
+  align-items: center; /* Centra verticalmente el carrusel */
+  height: 100vh; /* Ajusta la altura del carrusel al 100% del viewport */
+}
+
+.carousel-inner {
+  text-align: center; /* Centra horizontalmente las imágenes dentro del carrusel */
+}
+
+/*.carousel-item img {
+  max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% del contenedor 
+  max-height: 100%;  Ajusta la altura máxima de las imágenes al 100% del contenedor 
+  object-fit: contain; /* Ajusta el tamaño de la imagen para contenerse dentro del contenedor 
+}*/
+
+.img {
+  max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
+  max-height: 100%; /* Ajusta la altura máxima de las imágenes al 100% del contenedor */
+  object-fit: contain; /* Ajusta el tamaño de la imagen para contenerse dentro del contenedor */
+}
+/* #foto{
+  height: 300px ;
+} */
+.divformulariofoto {
+background-image: url(./img/20210128-NISSAN-FRONTIER-2021-COLOMBIA-PRECIOS-VERSIONES-CARACTERISTICAS-09.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 300px;
+}
